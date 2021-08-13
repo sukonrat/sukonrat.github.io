@@ -333,7 +333,7 @@ home-scroll-button {
 }
 
 .button--small {
-  padding: .75rem 1rem;
+  padding: 0.75rem 1rem;
 }
 
 .button--link {
@@ -342,7 +342,7 @@ home-scroll-button {
   color: var(--first-color);
 }
 
-.button--link:hover{
+.button--link:hover {
   background-color: transparent;
   color: var(--first-color-alt);
 }
@@ -440,30 +440,30 @@ home-scroll-button {
   border-radius: 0.25rem;
 }
 
-.skills-bar{
+.skills-bar {
   background-color: var(--first-color-lighter);
 }
 
-.skills-percentage{
+.skills-percentage {
   display: block;
   background-color: var(--first-color);
 }
 
-.skills-html{
-width: 90%;
+.skills-html {
+  width: 90%;
 }
 
-.skills-close .skills-list{
+.skills-close .skills-list {
   height: 0;
   overflow: hidden;
 }
 
-.skills-open .skills-list{
+.skills-open .skills-list {
   height: max-content;
   margin-bottom: var(--mb-2-5);
 }
 
-.skills-open .skills-arrow{
+.skills-open .skills-arrow {
   transform: rotate(-180deg);
 }
 
@@ -480,7 +480,7 @@ width: 90%;
   cursor: pointer;
 }
 
-.qualification-button:hover{
+.qualification-button:hover {
   color: var(--first-color);
 }
 
@@ -511,7 +511,7 @@ width: 90%;
   color: var(--text-color-light);
 }
 
-.qualification-rounder{
+.qualification-rounder {
   display: inline-block;
   width: 13px;
   height: 13px;
@@ -520,11 +520,11 @@ width: 90%;
 }
 
 .qualification-line {
-display: block;
-width: 1px;
-height: 100%;
-background-color: var(--first-color);
-transform: translate(6px, -7px);
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: var(--first-color);
+  transform: translate(6px, -7px);
 }
 
 .qualification [data-content] {
@@ -535,12 +535,12 @@ transform: translate(6px, -7px);
   display: block;
 }
 
-.qualification-button .qualification-active{
+.qualification-button .qualification-active {
   color: var(--first-color);
 }
 
 /* =========== SERVICES ============ */
-.services-container{
+.services-container {
   gap: 1.5rem;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -548,14 +548,14 @@ transform: translate(6px, -7px);
 .services-content {
   position: relative;
   background-color: var(--container-color);
-padding: 3.5rem .5rem 1.25rem 1.5rem;
-border-radius: .25rem;
-box-shadow: 0 2px 4px rgba(0,0,0,.15);
-transition: .3s;
+  padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
 }
 
 .services-content:hover {
-box-shadow: 0 4px 8px rgba(0,0,0,.15);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .services-icon {
@@ -574,11 +574,10 @@ box-shadow: 0 4px 8px rgba(0,0,0,.15);
 .services-button {
   cursor: pointer;
   font-size: var(--small-font-size);
-
 }
 
-.services-button:hover .button-icon{
-transform: translateX(.25rem);
+.services-button:hover .button-icon {
+  transform: translateX(0.25rem);
 }
 
 .services-modal {
@@ -593,20 +592,20 @@ transform: translateX(.25rem);
   justify-content: center;
   padding: 0 1rem;
   z-index: var(--z-modal);
-opacity: 0;
- visibility: hidden; 
- transition: .3s;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
 }
 
 .services-modal-content {
-position: relative;
-background-color: var(--container-color);
-padding: 1.5rem;
-border-radius: .5rem;
+  position: relative;
+  background-color: var(--container-color);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
 }
 
-.services-modal-services{
-row-gap: 1rem;
+.services-modal-services {
+  row-gap: 1rem;
 }
 
 .services-modal-service {
@@ -629,12 +628,72 @@ row-gap: 1rem;
 }
 
 .services-modal-icon {
-color: var(--first-color);
-margin-right: var(--mb-1-5);
+  color: var(--first-color);
+  margin-right: var(--mb-1-5);
 }
 
 /* Active Modal */
 .active-modal {
   opacity: 1;
   visibility: visible;
+}
+
+/* =========== PORTFOLIO ============ */
+.portfolio-container {
+  overflow: initial;
+}
+
+.portfolio-content {
+  padding: 0 1.5rem;
+}
+
+.portfolio-img {
+  width: 265px;
+  border-radius: 0.5rem;
+  justify-content: center;
+}
+
+.portfolio-title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.portfolio-description {
+  margin-bottom: var(--mb-0-75);
+}
+
+.portfolio-button:hover .button-icon{
+  transform: translateX(.25rem);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+ content: none;
+}
+
+.swiper-portfolio-icon {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.swiper-button-prev{
+  left: -.5rem;
+}
+
+.swiper-button-next{
+  right: -.5rem;
+}
+
+.swiper-container-horizontal  > .swiper-pagination-bullets {
+bottom: -2.5rem;
+}
+
+.swiper-pagination-bullet-active {
+background-color: var(--first-color);
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet {
+  outline: none;
 }
