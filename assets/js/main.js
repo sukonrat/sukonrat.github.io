@@ -94,7 +94,7 @@ modalCloses.forEach((modalClose) => {
 })
 
       /* =========== PORTFOLIO SWIPER ============ */
-      let swiperPortfolio = new Swiper(".portfolio-container", {
+      let swiperPortfolio = new Swiper('.portfolio-container', {
         cssMode: true,
         loop: true,
         navigation: {
@@ -126,19 +126,19 @@ modalCloses.forEach((modalClose) => {
               }
             });
 
-        /* =========== SCROLL SRCTIONS ACTIVE LINK ============ */
+        /* =========== SCROLL SECTIONS ACTIVE LINK ============ */
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive() {
   const scrollY = window.pageYOffset
 
   sections.forEach(current => {
-    const sectionHeight = section.offsetHeight
-    const sectionTop = section.offsetTop - 50;
+    const sectionHeight = current.offsetHeight
+    const sectionTop = current.offsetTop - 50;
     sectionId = current.getAttribute('id')
 
     if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-      document.querySelector('.nav-menu a[href*=]' + sectionId + ']').classList.add('active-link')
+      document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.add('active-link')
     }
     else
     {
@@ -188,7 +188,7 @@ if(selectedTheme){
 themeButton.addEventListener('click', () => {
     //add / remove the dark / icon theme
     document.body.classList.toggle(darkTheme)
-    themeButton.classList.toggle(icontheme)
+    themeButton.classList.toggle(iconTheme)
 
     //we save the theme and the icon that the user chose
     localStorage.setItem('selected-theme', getCurrentTheme())
