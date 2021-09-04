@@ -8,7 +8,7 @@
   /* =========== COLOR ============ */
   /* CHANGE FAVOURITE COLOR */
   /* purple-250. green-142, blue-230, pink-340*/
-  --hue-color: 340;
+  --hue-color: 250;
 
   /* HSL COLOR MODE */
   --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -504,6 +504,44 @@ img {
   width: 90%;
 }
 
+.skills-css {
+  width: 80%;
+}
+
+.skills-js {
+  width: 60%;
+}
+
+.skills-react {
+  width: 55%;
+}
+
+
+.skills-wordpress {
+  width: 80%;
+}
+
+.skills-php {
+  width: 80%;
+}
+
+.skills-node {
+  width: 50%;
+}
+
+.skills-firebase {
+  width: 60%;
+}
+
+.skills-figma {
+  width: 80%;
+}
+
+.skills-photoshop {
+  width: 70%;
+}
+
+
 .skills-close .skills-list {
   height: 0;
   overflow: hidden;
@@ -699,7 +737,7 @@ img {
 }
 
 .portfolio-img {
-  width: 200px;
+  width: 300px;
   border-radius: 0.5rem;
   justify-content: center;
 
@@ -781,7 +819,7 @@ text-align: center;
 }
 
 .project-img{
-  width: 232px;
+  width: 200px;
   justify-self: center;
 }
 
@@ -1142,7 +1180,7 @@ font-weight: var(--font-medium);
   }
 
   .about-img{
-    width: 350px;
+    width: 200px;
   }
 
   .about-description{
